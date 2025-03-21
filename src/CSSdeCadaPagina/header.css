@@ -1,0 +1,67 @@
+/* Estilo do cabeçalho */
+.header {
+  background-color: #151515;
+  color: white;
+  padding: 12px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(34, 224, 255, 0.6);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito sutil ao rolar */
+.header.scrolled {
+  background-color: #101010;
+  box-shadow: 0 3px 6px rgba(34, 224, 255, 0.4);
+}
+
+/* Lista de navegação */
+.listaHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 1.5rem;
+  list-style: none;
+}
+
+/* Links do menu */
+.linkHeader {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+/* Efeito hover */
+.linkHeader:hover {
+  color: #00FFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* Link ativo */
+.linkHeader.active {
+  color: #00FFFF;
+  background-color: rgba(0, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .listaHeader {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .linkHeader {
+    font-size: 18px;
+    padding: 10px;
+  }
+}

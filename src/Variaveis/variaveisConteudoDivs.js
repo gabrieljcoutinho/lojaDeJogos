@@ -1,0 +1,98 @@
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoEldenRing= 'RPG de Ação, Mundo Aberto'
+export const plataformasEldenRing= 'PC, PS4, PS5, Xbox One, Series X/S'
+export const lancamentoEldenRing= '25 de fevereiro de 2022'
+export const desenvolvedoraEldenRing = 'FromSoftware'
+export const classificaçãoEldenRing = '16'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+
+export const generoGhostwireTokyo= 'Ação-aventura'
+export const plataformasGhostwireTokyo= 'PS5, Microsoft Windows, Xbox Series'
+export const lancamentoGhostwireTokyo= '25 de março de 2022'
+export const desenvolvedoraGhostwireTokyo = 'Bethesda Softworks'
+export const classificaçãoGhostwireTokyo= '16'
+{/*-----------------------------------------------------------------------------------------------------------------------*/}
+export const generogodOfWarRagnarok= 'Ação-aventura, Hack and Slash'
+export const plataformasgodOfWarRagnarok= 'PS4, PS5'
+export const lancamentogodOfWarRagnarok= '9 de novembro de 2022'
+export const  desenvolvedoragodOfWarRagnarok= 'Santa Monica Studio'
+export const classificaçãogodOfWarRagnarok= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoSpiderMan2= 'Ação-aventura, Mundo Aberto'
+export const plataformasSpiderMan2= ' PS5'
+export const lancamentoSpiderMan2= '20 de outubro de 2023'
+export const  desenvolvedoraSpiderMan2= 'Insomniac Games'
+export const classificacaoSpiderMan2= '12'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoMK1= 'Luta'
+export const plataformasMK1= 'PS5, Xbox Series X|S, Nintendo, PC'
+export const lancamentoMK1= '19 de setembro de 2023'
+export const  desenvolvedoraMK1= 'NetherRealm Studios'
+export const classificaçãoMK1= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoREVillage= 'Terror de sobrevivência'
+export const plataformasREVillage= 'PS4, PS5, Xbox One, Series X|S, PC'
+export const lancamentoREVillage= '7 de maio de 2021'
+export const  desenvolvedoraREVillage= 'Capcom'
+export const classificaçãoREVillage= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoSilentHill2= 'Terror psicológico'
+export const plataformasSilentHill2= 'PS5, PC'
+export const lancamentoSilentHill2= '8 de outubro de 2024'
+export const  desenvolvedoraSilentHill2= 'Bloober Team'
+export const classificaçãoSilentHill2= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generospidermanMilesMorales= 'Ação-aventura, Mundo Aberto'
+export const plataformasspidermanMilesMorales= 'PS4, PS5'
+export const lancamentospidermanMilesMorales= '12 de novembro de 2020'
+export const  desenvolvedoraspidermanMilesMorales= 'Insomniac Games'
+export const classificaçãospidermanMilesMorales= '12'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoStray= 'Aventura'
+export const plataformasStray= 'PS4, PS5, PC'
+export const lancamentoStray= '19 de julho de 2022'
+export const  desenvolvedoraStray= 'BlueTwelve Studio'
+export const classificaçãoStray= '12'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoTLOU1= 'Ação-aventura, Sobrevivência'
+export const plataformasTLOU1= 'PS5'
+export const lancamentoTLOU1= ' 2 de setembro de 2022'
+export const  desenvolvedoraTLOU1= 'Naughty Dog'
+export const classificaçãoTLOU1= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoTLOU2= 'Ação-aventura, Sobrevivência'
+export const plataformasTLOU2= 'PS5'
+export const lancamentoTLOU2= '19 de janeiro de 2024'
+export const  desenvolvedoraTLOU2= 'Naughty Dog'
+export const classificaçãoTLOU2= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generotheCrewMotorfest= 'Corrida'
+export const plataformastheCrewMotorfest= 'PS4, PS5, Xbox One, Series X|S, PC'
+export const lancamentotheCrewMotorfest= '14 de setembro de 2023'
+export const  desenvolvedoratheCrewMotorfest= 'Ivory Tower'
+export const classificaçãotheCrewMotorfest= '12'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoblackMythWukong= 'Ação, RPG'
+export const plataformasblackMythWukong= 'PC, PS5, Xbox Series X|S'
+export const lancamentoblackMythWukong= '20 de agosto de 2024'
+export const  desenvolvedorablackMythWukong= 'Game Science'
+export const classificaçãoblackMythWukong= '16'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generountilDawn= 'Terror'
+export const plataformasuntilDawn= 'PS4, PS5'
+export const lancamentountilDawn= '25 de agosto de 2015'
+export const  desenvolvedorauntilDawn= 'Supermassive Games'
+export const classificaçãountilDawn= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generogranTurismo7= 'Simulação de corrida'
+export const plataformasgranTurismo7= 'PS4, PS5'
+export const lancamentogranTurismo7= '4 de março de 2022'
+export const  desenvolvedoragranTurismo7= 'Polyphony Digital'
+export const classificaçãogranTurismo7= 'L'
+{/*------------------------------------------------------------------------------------------------------------------------*/}
+export const generoScreedShadows= 'Açao, Mundo aberto'
+export const plataformasScreedShadows= 'Ps5, Xbox Series X|S, PC'
+export const lancamentoScreedShadows= '20 de março de 2025'
+export const  desenvolvedoraScreedShadows= 'Ubisoft Quebec'
+export const classificaçãoScreedShadows= '18'
+{/*------------------------------------------------------------------------------------------------------------------------*/}

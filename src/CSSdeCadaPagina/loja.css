@@ -1,0 +1,145 @@
+.flexbox{
+  border-radius: 20px ;
+  display: flex;
+  flex-flow: row wrap;
+  height:2500px; /*Essa parte aumenta a altura da flexbox para nao ficar em cima do footer*/
+  justify-content: space-around;
+  margin-bottom: 15px;
+  padding-top: 6rem;
+  margin-top: 1.5rem; /* Adicionado margin-top */
+}
+
+
+.flexbox img{
+border-radius: 20px 20px 0px 0px;
+  width: 300px;
+  height: 200px;
+}
+
+.flexbox div {
+  background: linear-gradient(to bottom, darkred, #800000); /* Gradiente para as divs */
+  border-radius: 20px;
+  width: 300px;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: praCima 2s ease-out;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* Sombra neon sutil */
+}
+
+.flexbox div:hover{
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+  transition: 0.3s;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.7); /* Azul neon suave */
+  background-color: #990000; /* Um vermelho mais escuro ao passar o mouse */
+}
+
+/*Paddin paragrafos*/
+.detalhesDoJogo{
+  padding-left: 1rem;
+}
+/*FimPaddin paragrafos*/
+
+@keyframes praCima{
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NomeJogo {
+  padding: 5px 0;
+  background-color: #151515;
+  color: #00ffcc;
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+
+/*Jogos especificos*/
+.stray{
+padding-right: 2.5rem;
+}
+
+
+span {
+  color: #00ffcc;
+}
+
+strong{
+text-transform: bold;
+}
+
+.btnCompraLoja{
+  position: relative;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;/*tamanho do botao*/
+  letter-spacing: 0.1em;
+  padding: 5px 20px;
+  transition: 0.5s;
+}
+
+
+.precoJogo {
+  color: #00ffcc;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.precoJogo:hover {
+  color: #22e0ff;
+  transform: scale(1.05);
+  text-shadow: 0 0 5px #22e0ff;
+  animation: pulse 0.8s infinite alternate; /* Nova animação */
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1.05);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+
+
+.btnCompraLoja:hover{
+  /* letter-spacing: 0.25em; */
+  background-color: #22e0ff;/*cor da borda*/
+  color: #22e0ff; /*cor da letra*/
+  box-shadow: 0 0 35px #22e0ff;/*sombra*/
+}
+
+.btnCompraLoja::before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background-color: #27282c;
+}
+
+.btnCompraLoja span{
+  position: relative;
+  z-index: 1;
+}

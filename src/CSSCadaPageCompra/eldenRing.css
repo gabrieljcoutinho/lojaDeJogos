@@ -1,0 +1,236 @@
+.pageEldenRing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.eldenRingContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* alinha os itens no topo */
+  max-width: 1000px;
+  width: 100%;
+  background-color: #27282c;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin: 20px;
+}
+
+.eldenRingImage {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 30px;
+}
+
+.eldenRingImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.eldenRingDetails {
+  flex: 1;
+  text-align: left;
+}
+
+.eldenRingDetails h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #22e0ff;
+}
+
+.eldenRingDescription, .eldenRingFeatures {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #d0d0d0;
+}
+
+.eldenRingFeatures li {
+  margin-bottom: 5px;
+}
+
+.priceAndPlatform {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #a0f0a0;
+}
+
+.platform {
+  color: #b0c4de;
+}
+
+.btnCompraLoja {
+  position: relative;
+  border: 2px solid #22e0ff;
+  background-color: transparent;
+  color: #22e0ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btnCompraLoja:hover {
+  background-color: #22e0ff;
+  color: #27282c;
+  box-shadow: 0 0 35px #22e0ff;
+  cursor: pointer;
+}
+
+.btnCompraLoja::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background-color: #27282c;
+}
+
+.btnCompraLoja span {
+  position: relative;
+  z-index: 1;
+}
+
+.ratingBox2 {
+  background-color: red;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: auto;
+}
+
+
+
+.btnCompraLoja.buying {
+  transform: scale(1.1); /* Aumenta o tamanho do botão */
+  transition: transform 0.2s ease-in-out; /* Transição suave */
+  box-shadow: 0 0 40px #22e0ff; /* Intensifica a sombra */
+}
+
+.btnCompraLoja.buying span{
+    animation: blink 0.5s ease-in-out;
+}
+
+@keyframes blink {
+  0%{
+    opacity:1;
+  }
+  50%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+
+
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantitySelector label {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  color: #d0d0d0;
+}
+
+.quantitySelector input {
+  width: 60px;
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+
+/* ... (seu CSS anterior) ... */
+
+.userRating {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.userRating label {
+  margin-right: 10px;
+  color: #d0d0d0;
+}
+
+.starRating {
+  display: inline-flex;
+}
+
+.star {
+  font-size: 2rem;
+  color: #888; /* Cor das estrelas vazias */
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.star.filled {
+  color: gold; /* Cor das estrelas preenchidas */
+}
+
+/* ... (seu CSS anterior) ... */
+
+.passwordInput {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.passwordInput label {
+  margin-right: 10px;
+  color: #d0d0d0;
+}
+
+.passwordInput input {
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.btnCompraLoja.bought{
+    background-color: #22e0ff;;
+    border: 2px solid #22e0ff;;
+    color: white;
+}
+
+.btnCompraLoja.bought:hover{
+    box-shadow: 0 0 35px #22e0ff;;
+}

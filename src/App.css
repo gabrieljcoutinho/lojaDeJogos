@@ -1,0 +1,63 @@
+*{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin: 0;
+    margin-top: 0;
+   }
+
+
+   body {
+    background: linear-gradient(to bottom, #d3d3d3, #ffffff); ;
+  }
+
+
+   ::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #00FFFF;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #151515;
+}
+
+
+  [aria-label]::after {
+    content: attr(aria-label);
+    display: none;
+    position: absolute;
+    z-index: 5000000; /* Mantém o z-index alto */
+    pointer-events: none;
+    padding: 8px 10px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #412917;
+    border-radius: 4px; /* Adiciona bordas arredondadas para melhor aparência */
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  }
+
+  [aria-label]:hover::after {
+    display: block;
+    top: 100%; /* Inicia na parte inferior do elemento */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 10px); /* Ajusta a posição e move ligeiramente para baixo */
+  }
+
+  [aria-label]:hover::after {
+      display: block;
+      position: fixed; /* Fixa a posição em relação à viewport */
+      top: 0; /* Inicializa a posição superior */
+      left: 0; /* Inicializa a posição esquerda */
+      transform: translate(calc(var(--mouse-x, 0) * 1px), calc(var(--mouse-y, 0) * 1px)); /* Move baseado nas variáveis de mouse */
+  }
+
+  [aria-label] {
+      --mouse-x: 200;
+      --mouse-y: 200;
+  }
+
+  [aria-label]:hover {
+      cursor: none; /* remove o cursor padrão */
+  }
