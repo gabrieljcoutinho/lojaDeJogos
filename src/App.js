@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import Loja from './pages/Loja';
 import Contato from './pages/Contato';
 
-//Components
+//Components do projeto
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
