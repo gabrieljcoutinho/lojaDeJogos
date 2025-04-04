@@ -50,7 +50,7 @@
 
 ---Invés de eu colocar o texto direto, eu crio outro arquiov, crio uma varável e colco essa variável no lugar do texto, segue exeplo:
    var valorJogo: "R$: 1000,00"
-    <p>Esse jogo custa: {valorJogo}</p>
+     <p>Esse jogo custa: {valorJogo}</p>
 
 ---Assim eu posso alterar o valor de uma forma mais rápida e posso colocar menos texto, se nescessário, posso trocar o resto do texto por outra variável ou eu troco todo o texto para uma única variável, que é como está nos aquivos, assim fica mais fácil de manipular os conteúdos
  
