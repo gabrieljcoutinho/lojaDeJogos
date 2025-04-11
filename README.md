@@ -19,6 +19,7 @@ Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
 (Observação: Este projeto utiliza apenas os componentes Footer e Header)
 
 CSSdaPageCompra(Pasta)
+
     - CSSdaPageCompra
       - reVillage.css (colocar todos os arquivos de CSS de cada jogo)
 
