@@ -23,41 +23,43 @@ CSSdaPageCompra(Pasta)
     - CSSdaPageCompra
       - reVillage.css (colocar todos os arquivos de CSS de cada jogo)
 
-- CSSdeCadaPagina(Pasta)
-    - header.css
 
-- imgsCds(Pasta)
-    - reVillage.jpg
+    - CSSdeCadaPagina(Pasta)
+     - header.css
+
+    - imgsCds(Pasta)
+      - reVillage.jpg
 
 - imgsJogos(Pasta)
 
 Insira as imagens de banner dos jogos, que serão exibidas para o usuário ao clicar :
 
-  - imgsJogos(Pasta)
-    - reVillage.jpg
+    - imgsJogos(Pasta)
+       - reVillage.jpg
     
-    imgsParceria(Pasta) 
+  
+  imgsParceria(Pasta) 
   Adicione as imagens dos logos das empresas desenvolvedoras dos jogos. Neste projeto, são usadas para simular propagandas:
   
-  - imgsParceria(Pasta)
-    - Capcom.jpg
+    - imgsParceria(Pasta)
+      - Capcom.jpg
 
 pageComprarJogo
 
 Mantenha os arquivos que serão mostrados quando um usuário clicar para comprar um jogo. Cada arquivo representará a página individual de um jogo, contendo detalhes e um botão de compra:
 
-  - pageComprarJogo (Pasta)
-    - EndenRing.js
+    - pageComprarJogo (Pasta)
+      - EndenRing.js
 
-  - pages (Pasta)
-    - Home.js
+    - pages (Pasta)
+      - Home.js
      
-    Variaveis(Pasta)
+   Variaveis(Pasta)
 
 Utilize esta pasta para armazenar arquivos com variáveis de texto. Isso facilita a manutenção e edição do conteúdo do site.
 
-   - Variaveis(Pasta)
-     - variaveisConteudoDivs.js (Arquivo)
+    - Variaveis(Pasta)
+      - variaveisConteudoDivs.js (Arquivo)
 
 Exemplo:
   - export const precoJogo = R$: 1000,00
