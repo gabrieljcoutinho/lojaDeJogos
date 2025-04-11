@@ -71,7 +71,6 @@ No arquivo Loja.js
      <div>
         <p>
             {precoJogo} 
-            Preço do jogo = R$: 1000,00
         </p>
       </di>
 
