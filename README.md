@@ -1,6 +1,6 @@
 #Projeto React de Loja Virtual
 
-Abra o terminar no PowerShell e insira os comandos:
+  Abra o terminar no PowerShell e insira os comandos:
 
 - npx create-react-app loja
 - npm install react-router-dom (Instale essa biblioteca para utilizar a troca de página através de links)
