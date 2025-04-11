@@ -10,7 +10,7 @@
 
 Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
 
-- Componentes (Pasta)
+- Componentes(Pasta)
    Header
      Cabeçalho da página
     Footer
@@ -18,27 +18,27 @@ Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
 
 (Observação: Este projeto utiliza apenas os componentes Footer e Header)
 
- - CSSdaPageCompra (Pasta)
+ - CSSdaPageCompra(Pasta)
     CSSdaPageCompra
      reVillage.css (colocar todos os arquivos de CSS de cada jogo)
 
-- CSSdeCadaPagina (Pasta)
+- CSSdeCadaPagina(Pasta)
     header.css
 
-- imgsCds (Pasta)
+- imgsCds(Pasta)
     reVillage.jpg
 
-- imgsJogos (Pasta)
+- imgsJogos(Pasta)
 
 Insira as imagens de banner dos jogos, que serão exibidas para o usuário ao clicar :
 
-  -imgsJogos (Pasta)
+  -imgsJogos(Pasta)
     reVillage.jpg
     
-  -imgsParceria (Pasta) 
+  -imgsParceria(Pasta) 
   Adicione as imagens dos logos das empresas desenvolvedoras dos jogos. Neste projeto, são usadas para simular propagandas:
   
-  -imgsParceria (Pasta)
+  -imgsParceria(Pasta)
     Capcom.jpg
 
 pageComprarJogo
@@ -51,11 +51,11 @@ Mantenha os arquivos que serão mostrados quando um usuário clicar para comprar
   -pages (Pasta)
     Home.js
      
-  -Variaveis (Pasta)
+  -Variaveis(Pasta)
 
 Utilize esta pasta para armazenar arquivos com variáveis de texto. Isso facilita a manutenção e edição do conteúdo do site.
 
-   -Variaveis (Pasta)
+   -Variaveis(Pasta)
      variaveisConteudoDivs.js (Arquivo)
 
 Exemplo:
