@@ -77,12 +77,7 @@ Abra o arquivo App.js.
 
 Abra o terminal integrado no seu editor de código (geralmente clicando com o botão direito do mouse e selecionando "Abrir no Terminal Integrado").
 
-Execute o seguinte comando:
-
-  -terminal
-  
-  -PowerShell
-  
-  -npm start
+Execute o seguinte comando no terminal do PowerShell:
+  - npm start
 
 Pressione Enter. O projeto será compilado e aberto em uma nova aba do seu navegador.
