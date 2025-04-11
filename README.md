@@ -1,72 +1,102 @@
- #Projeto feito usando React. 
+Projeto React de Loja Virtual
+Comandos Necessários
+Crie um novo projeto React:
+Bash
 
- #Comandos nescessários:
+npx create-react-app loja
+Instale a biblioteca de roteamento:
+Bash
 
- 1- npx create-react-app loja;
- 2- npm install react-router-dom;
- 3- Ir no arquivo App.js e colocar o comando: npm start; 
+npm install react-router-dom
+Inicie o servidor de desenvolvimento:
+Bash
 
-#Foram criadas 10 pastas para separar o projeto, lembre-se de criar dentro do SRC
+cd loja
+npm start
+Estrutura de Pastas
+Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
 
-#Componentes, coloque arquivos que montam a página:
-1 - Header;
-2 - Section;
-3 - main; 
-4- footer;
+Componentes
+Armazene aqui os arquivos que estruturam as páginas:
 
-/No meu projeto só foram nescessários o Footer e o Header/
+Header
+Section
+main
+footer
+(Observação: Este projeto utiliza apenas os componentes Footer e Header)
 
- # Na página de compra, fiz vários links que levão para a compra do jogo, devido isso crie uma página de Css para cad um, segue o exemplo:
+CSSdaPageCompra
+Guarde os arquivos CSS específicos para cada página de compra de jogo. Por exemplo:
 
- CSSdaPageCompra /nome da pasta do meu projeto/
-    reVillage.css /nome do arquivo css que representa o jogo/
+CSSdaPageCompra/
+  reVillage.css
+CSSdeCadaPagina
+Aloque os arquivos CSS para estilizar as páginas principais, como a Home e os componentes gerais (Header, Footer, etc.). Exemplo:
 
-# Crie uma pasta com o seguinte nome: CSSdeCadaPagina, esses Css se~rao os estilos da Home, pode ser dos componetes como Header, footer etc.. Segue exemplo:
-  CSSdeCadaPagina
-    header.css /Nome do arquivo/
+CSSdeCadaPagina/
+  header.css
+imgsCds
+Coloque as imagens que representam as capas dos jogos (CDs):
 
-#Crie uma pasta para colocar as imagens que representam o CD de cada jogo, segue exemplo:
-  imgsCds /nome da pasta/
-    reVillage.jpg /Nome do arquivo/
+imgsCds/
+  reVillage.jpg
+imgsJogos
+Insira as imagens de banner dos jogos, que serão exibidas para o usuário clicar:
 
-#Crie uma pasta para por as imagens que representa o "Banner" do jogo, é o que vai mostrar para pessoa clicar:
-  imgsJogos /Nome da pasta/
-    reVillage.jpg /Nome do arquivo/
+imgsJogos/
+  reVillage.jpg
+imgsParceria
+Adicione as imagens dos logos das empresas desenvolvedoras dos jogos. Neste projeto, são usadas para simular propagandas:
 
-#Crie uma pasta com o nome imgsParceria, para colcoar imagens dos logos das empressas que fizeram os jogos, no meu projeto eu usei os logos para representar propagandas:
-  imgsParceria /Nome da pasta/
-    Capcom.jpg /Nome do arquivo/
+imgsParceria/
+  Capcom.jpg
+pageComprarJogo
+Mantenha os arquivos que serão mostrados quando um usuário clicar para comprar um jogo. Cada arquivo representará a página individual de um jogo, contendo detalhes e um botão de compra:
 
-# Crie uma pasta para os arquivos que vão ser mostardos quando a pessoa clicar para comprar o jogo, vai ter umas divs e vai ter um botão no final de cada div de cada jogo, ao clciar a pessoa vai ser redirecionada para outra página onde só terá o jogo que a pessoa quer
-   pageComprarJogo /Nome da pasta/
-     EndenRing.js /Nome do arquivo/
+pageComprarJogo/
+  EndenRing.js
+pages
+Organize os arquivos que representam as diferentes seções do site (Home, Loja, Contato):
 
-# Crie uma pasta para separar os links do Header, o meu projeto é dividido em TRÊS parte: Home, Loja e Contato:
-  pages /Nome de pasta/
-    Home.js /Nome do arquivo/
+pages/
+  Home.js
+Variaveis
+Utilize esta pasta para armazenar arquivos com variáveis de texto. Isso facilita a manutenção e edição do conteúdo do site.
 
-# Crie uma pasta chamada Variaveis, essa pasta eu criei para colocar o minimo de texto no outros arquivos, assim eu posso alterar os textos de uma forma mais rápida, para facilitar o entendimento segue o exemplo:
-    <p>Esse jogo custa R$: 1000,00</p>
+Exemplo:
 
----Invés de eu colocar o texto direto, eu crio outro arquiov, crio uma varável e colco essa variável no lugar do texto, segue exeplo:
-   var valorJogo: "R$: 1000,00"
-     <p>Esse jogo custa: {valorJogo}</p>
+Ao invés de inserir o texto diretamente no componente:
 
----Assim eu posso alterar o valor de uma forma mais rápida e posso colocar menos texto, se nescessário, posso trocar o resto do texto por outra variável ou eu troco todo o texto para uma única variável, que é como está nos aquivos, assim fica mais fácil de manipular os conteúdos
- 
- # Para finalizar, abra o arquivo App.js, abra o terminar clicando com o botão direto do Mouse e escolhendo a opção Abrir no Terminal Integrado e insira o seguinte comando:
-   npm start
+JavaScript
 
-# Aperte Enter e o projeto estará rodando
+<p>Esse jogo custa R$: 1000,00</p>
+Crie um arquivo com uma variável:
 
-/-------------------Fim do código-------------------/
+JavaScript
 
+// Variaveis/precoJogo.js
+export const valorJogo = "R$: 1000,00";
+E importe e utilize a variável no seu componente:
 
+JavaScript
 
+import { valorJogo } from '../Variaveis/precoJogo';
 
+function MeuComponente() {
+  return <p>Esse jogo custa: {valorJogo}</p>;
+}
+Essa abordagem permite alterar os textos de forma mais rápida e centralizada, facilitando a manipulação do conteúdo.
 
+Execução do Projeto
+Para iniciar o projeto, siga estas etapas:
 
+Abra o arquivo App.js.
 
+Abra o terminal integrado no seu editor de código (geralmente clicando com o botão direito do mouse e selecionando "Abrir no Terminal Integrado").
 
+Execute o seguinte comando:
 
-    
+Bash
+
+npm start
+Pressione Enter. O projeto será compilado e aberto em uma nova aba do seu navegador.
