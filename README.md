@@ -11,22 +11,22 @@
 Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
 
 - Componentes(Pasta)
-   Header
-     Cabeçalho da página
-    Footer
-      Rodapé da página
+   - Header
+     - Cabeçalho da página
+   - Footer
+      - Rodapé da página
 
 (Observação: Este projeto utiliza apenas os componentes Footer e Header)
 
  - CSSdaPageCompra(Pasta)
-    CSSdaPageCompra
-     reVillage.css (colocar todos os arquivos de CSS de cada jogo)
+    - CSSdaPageCompra
+     - reVillage.css (colocar todos os arquivos de CSS de cada jogo)
 
 - CSSdeCadaPagina(Pasta)
-    header.css
+    - header.css
 
 - imgsCds(Pasta)
-    reVillage.jpg
+    - reVillage.jpg
 
 - imgsJogos(Pasta)
 
@@ -63,9 +63,11 @@ Exemplo:
 
 No arquivo Loja.js
   - import precoJogo from '../Variaveis/variavesiPrecosJogs.js'
-    <div>
-      (tag p) {precoJogo} (tag /p)
-    </div>
+    tag abertura div
+        tag abertura p
+            {precoJogo}
+        tag fechamento p
+    tag fechamento div
 
 Qualquer alteração feita no arquivo, a variável já tera a alteração por causa da importação
 
