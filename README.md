@@ -1,4 +1,4 @@
-# Projeto React de Loja Virtual
+# Projeto React - Loja Virtual
 
   Abra o terminar no PowerShell e insira os comandos:
 
