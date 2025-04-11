@@ -19,29 +19,11 @@ npm start
 ESTRUTURA DE PASTAS
 Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
 
-src/
-├── Componentes/
-│   ├── Footer.js
-│   └── Header.js
-├── CSSdaPageCompra/
-│   └── reVillage.css
-├── CSSdeCadaPagina/
-│   ├── header.css
-│   └── ... (outros arquivos CSS)
-├── imgsCds/
-│   └── reVillage.jpg
-├── imgsJogos/
-│   └── reVillage.jpg
-├── imgsParceria/
-│   └── Capcom.jpg
-├── pageComprarJogo/
-│   └── EndenRing.js
-├── pages/
-│   ├── Home.js
-│   └── ... (outras páginas)
-└── Variaveis/
-    └── precoJogo.js
-Componentes
+src
+    Components
+        Footer.css
+        Header.css
+
 
 Armazene aqui os arquivos que estruturam as páginas:
 
