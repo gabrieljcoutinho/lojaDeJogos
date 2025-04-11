@@ -65,12 +65,14 @@ Exemplo:
   - export const precoJogo = R$: 1000,00
 
 No arquivo Loja.js
-  - import precoJogo from '../Variaveis/variavesiPrecosJogs.js'
-    tag abertura div
-        tag abertura p
+      
+    - import precoJogo from '../Variaveis/variavesiPrecosJogs.js'
+    
+     <div>
+        <p>
             {precoJogo}
-        tag fechamento p
-    tag fechamento div
+        </p>
+      </di>
 
 Qualquer alteração feita no arquivo, a variável já tera a alteração por causa da importação
 
