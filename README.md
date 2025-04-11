@@ -64,7 +64,7 @@ Exemplo:
 No arquivo Loja.js
   - import precoJogo from '../Variaveis/variavesiPrecosJogs.js'
     <div>
-      $<p> {precoJogo} $</p>
+      $<p>{precoJogo}</p>$
     </div>
 
 Qualquer alteração feita no arquivo, a variável já tera a alteração por causa da importação
