@@ -1,90 +1,81 @@
 # Projeto React - Loja Virtual
 
-  Abra o terminar no PowerShell e insira os comandos:
+Loja de jogos com as págias Home, Loja e Contato.
 
-- npx create-react-app loja
-- npm install react-router-dom (Instale essa biblioteca para utilizar a troca de página através de links)
+Desenvolvido com React e o componente react-router-dom que é utilizado para permitir a troca de páginas.
 
+## Como rodar o projeto
 
-#Estrutura das Pastas
+Abra o terminar do PowerShell e execute o comando abaixo:
 
-Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
+```bash
+npm start
+```
 
-- Componentes(Pasta)
-   - Header
-     - Cabeçalho da página
-   - Footer
-      - Rodapé da página
-
-(Observação: Este projeto utiliza apenas os componentes Footer e Header)
-
-CSSdaPageCompra(Pasta)
-
-    - CSSdaPageCompra
-      - reVillage.css (colocar todos os arquivos de CSS de cada jogo)
+Acessar a aplicação em http://localhost:3000.
 
 
-    - CSSdeCadaPagina(Pasta)
-     - header.css
+## Estrutura do projeto
 
-    - imgsCds(Pasta)
-      - reVillage.jpg
+As pastas estão organizadas da seguinte forma:
 
-- imgsJogos(Pasta)
+Componentes do projeto:
 
-Insira as imagens de banner dos jogos, que serão exibidas para o usuário ao clicar :
+- \Components
+  - Header.js = Cabeçalho da página
+  - Footer = Rodapé da página
 
-    - imgsJogos(Pasta)
-       - reVillage.jpg
-    
-  
-  imgsParceria(Pasta) 
-  Adicione as imagens dos logos das empresas desenvolvedoras dos jogos. Neste projeto, são usadas para simular propagandas:
-  
-    - imgsParceria(Pasta)
-      - Capcom.jpg
+- \CSSdaPageCompra = Arquivo CSS de cada um dos jogos
 
-pageComprarJogo
+- \CSSdeCadaPagina
+  - header.css
 
-Mantenha os arquivos que serão mostrados quando um usuário clicar para comprar um jogo. Cada arquivo representará a página individual de um jogo, contendo detalhes e um botão de compra:
+- \imgsCds = Imagem dos CD's
 
-    - pageComprarJogo (Pasta)
-      - EndenRing.js
+- \imgsJogos = Imagem do banner dos jogos
 
-    - pages (Pasta)
-      - Home.js
-     
-   Variaveis(Pasta)
+- \imgsParceria =  Imagem do logo das empresas
 
-Utilize esta pasta para armazenar arquivos com variáveis de texto. Isso facilita a manutenção e edição do conteúdo do site.
 
-    - Variaveis(Pasta)
-      - variaveisConteudoDivs.js (Arquivo)
+- \pageComprarJogo = Página de compra
 
-Exemplo:
-  - export const precoJogo = R$: 1000,00
 
-No arquivo Loja.js
-      
-    - import precoJogo from '../Variaveis/variavesiPrecosJogs.js'
-    
+ - \Variaveis = Variáveis dos textos
+
+
+## Atualização
+
+No site está sendo utilizado variáveis para permitir atualizar os conteúdos.
+
+Por exemplo para alterar o valor do jogo Elder, precisamos:
+
+1- Alterar o valor no arquivo: `variaveisPrecosJogs.js`
+
+```
+export const preçoEldenRing = 'R$:275,84'
+```
+
+e o valor será automaticamente exibido na página de compra, devido ao código abaixo no arquivo `Loja.js`:
+
+  import precoJogo from '../Variaveis/variavesiPrecosJogs.js'
+
      <div>
         <p>
-            {precoJogo} 
+            {precoJogo}
         </p>
       </di>
 
-Qualquer alteração feita no arquivo, a variável já tera a alteração por causa da importação
 
-Execução do Projeto
+## Como criar um projeto igual
 
-Para iniciar o projeto, siga estas etapas:
+Criar o projeto
 
-Abra o arquivo App.js.
+```bash
+npx create-react-app loja
+```
 
-Abra o terminal integrado no seu editor de código (geralmente clicando com o botão direito do mouse e selecionando "Abrir no Terminal Integrado").
+Adicionar o componente react-router-dom
 
-Execute o seguinte comando no terminal do PowerShell:
-  - npm start
-
-Pressione Enter. O projeto será compilado e aberto em uma nova aba do seu navegador.
+```bash
+npm install react-router-dom
+```
