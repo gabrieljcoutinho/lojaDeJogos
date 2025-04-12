@@ -1,12 +1,11 @@
-
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 
 //pages
 import Home from './pages/Home';
 import Loja from './pages/Loja';
 import Contato from './pages/Contato';
+import NotFound from './statusResposta/NotFound.js'; // Importe a página de NotFound
 
 //Components do projeto
 import Header from './Components/Header';
@@ -41,7 +40,7 @@ function App() {
         <Header />
 
         <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/loja/Play/Station" element={<Loja />} />
           <Route path="/contato/Play/Station" element={<Contato />} />
 
@@ -64,7 +63,8 @@ function App() {
           <Route path='/GranTurismo/comprar/PlayStaion/Palace' element={<GranTurismo/>} />
           <Route path='/AssasinoShadows/comprar/PlayStaion/Palace' element={<AssasinoShadows/>} />
 
-
+          {/* Rota para a página de 404 - deve ser a última Route */}
+          <Route path="*" element={<NotFound />} />
 
         </Routes>
 
