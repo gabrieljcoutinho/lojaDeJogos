@@ -1,71 +1,90 @@
-# Getting Started with Create React App
+# Projeto React - Loja Virtual
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  Abra o terminar no PowerShell e insira os comandos:
 
-## Available Scripts
+- npx create-react-app loja
+- npm install react-router-dom (Instale essa biblioteca para utilizar a troca de página através de links)
 
-In the project directory, you can run:
 
-### `npm start`
+#Estrutura das Pastas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dentro da pasta src, crie as seguintes pastas para organizar o projeto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Componentes(Pasta)
+   - Header
+     - Cabeçalho da página
+   - Footer
+      - Rodapé da página
 
-### `npm test`
+(Observação: Este projeto utiliza apenas os componentes Footer e Header)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CSSdaPageCompra(Pasta)
 
-### `npm run build`
+    - CSSdaPageCompra
+      - reVillage.css (colocar todos os arquivos de CSS de cada jogo)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - CSSdeCadaPagina(Pasta)
+     - header.css
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - imgsCds(Pasta)
+      - reVillage.jpg
 
-### `npm run eject`
+- imgsJogos(Pasta)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Insira as imagens de banner dos jogos, que serão exibidas para o usuário ao clicar :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - imgsJogos(Pasta)
+       - reVillage.jpg
+    
+  
+  imgsParceria(Pasta) 
+  Adicione as imagens dos logos das empresas desenvolvedoras dos jogos. Neste projeto, são usadas para simular propagandas:
+  
+    - imgsParceria(Pasta)
+      - Capcom.jpg
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+pageComprarJogo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Mantenha os arquivos que serão mostrados quando um usuário clicar para comprar um jogo. Cada arquivo representará a página individual de um jogo, contendo detalhes e um botão de compra:
 
-## Learn More
+    - pageComprarJogo (Pasta)
+      - EndenRing.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - pages (Pasta)
+      - Home.js
+     
+   Variaveis(Pasta)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Utilize esta pasta para armazenar arquivos com variáveis de texto. Isso facilita a manutenção e edição do conteúdo do site.
 
-### Code Splitting
+    - Variaveis(Pasta)
+      - variaveisConteudoDivs.js (Arquivo)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Exemplo:
+  - export const precoJogo = R$: 1000,00
 
-### Analyzing the Bundle Size
+No arquivo Loja.js
+      
+    - import precoJogo from '../Variaveis/variavesiPrecosJogs.js'
+    
+     <div>
+        <p>
+            {precoJogo} 
+        </p>
+      </di>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Qualquer alteração feita no arquivo, a variável já tera a alteração por causa da importação
 
-### Making a Progressive Web App
+Execução do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Para iniciar o projeto, siga estas etapas:
 
-### Advanced Configuration
+Abra o arquivo App.js.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Abra o terminal integrado no seu editor de código (geralmente clicando com o botão direito do mouse e selecionando "Abrir no Terminal Integrado").
 
-### Deployment
+Execute o seguinte comando no terminal do PowerShell:
+  - npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Loja-Jogos
+Pressione Enter. O projeto será compilado e aberto em uma nova aba do seu navegador.
